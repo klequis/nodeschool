@@ -4,8 +4,6 @@ var fs = require("fs");
 // convert buffer to string: var str = buf.toString()
 // doc on bufferers
 // file:///home/user01/.nvm/versions/node/v6.9.1/lib/node_modules/learnyounode/node_apidoc/fs.html
-let dirPath = process.argv[2];
-let extension = process.argv[3];
 let buf = fs.readFileSync(process.argv[2]);
 let str = buf.toString();
 let arr = str.split("\n");
